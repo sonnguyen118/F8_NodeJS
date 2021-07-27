@@ -1,3 +1,18 @@
-h1 {
-    color: violet;
+
+@import 'variables';
+
+.masthead{
+    background-image: url('/img/home.jpg');
+    height: 500px;
+}
+.navbar-shrink{
+    background-color: black ;
+}
+.son_nguyen{
+    background-color: aqua;
+    height:500px;
+}
+.logo-f8__text{
+    height: 30px;
+    margin-bottom: 8px;
 }
