@@ -2,8 +2,10 @@
 @import 'variables';
 
 .masthead_son{
-    background-image: url('/img/home.jpg');
-    height: 1200px;
+    background-image: url('/img/back-gound-bizcute.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 700px;
 }
 .navbar-shrink{
     background-color: black ;
@@ -18,4 +20,10 @@
 }
 .mt-son-5{
     padding-top: 100px;
+}
+.my-user-logo{
+    width:28px;
+    height:28px;
+    border-radius: 50%;
+    margin-right: 4px;
 }
