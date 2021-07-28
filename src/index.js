@@ -2,6 +2,7 @@
 const express = require('express');
 const morgan = require('morgan');
 const handlebars = require('express-handlebars');
+const methodOverride = require('method-override');
 const path = require('path');
 const app = express();
 const port = 3000;
@@ -17,13 +18,18 @@ app.use(express.static(path.join(__dirname, 'public')));
 // Để đọc được biến body
 app.use (express.urlencoded())
 
+app.use(methodOverride('_method'));
+
 // HTTP loger
 // app.use(morgan('combined'))
 // Template engine
 app.engine(
     'hbs',
     handlebars({
-        extname: 'hbs',
+        extname: 'hbs', //Đổi tên handlebars thành hbs
+        helpers: {
+            sum: (a, b) => a + b, // thêm function để công trừ @index chỉ mục số thứ tự 1-2-3 chứ không bắt đầu từ 0-1-2-3
+        }
     }),
 );
 app.set('view engine', 'hbs');
