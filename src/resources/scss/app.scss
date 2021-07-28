@@ -1,9 +1,9 @@
 
 @import 'variables';
 
-.masthead{
+.masthead_son{
     background-image: url('/img/home.jpg');
-    height: 500px;
+    height: 1200px;
 }
 .navbar-shrink{
     background-color: black ;
@@ -15,4 +15,7 @@
 .logo-f8__text{
     height: 30px;
     margin-bottom: 8px;
+}
+.mt-son-5{
+    padding-top: 100px;
 }

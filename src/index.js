@@ -14,6 +14,9 @@ db.connect();
 //Static file cho img băng cao độ của các file ngoài ( vượt qua thư mục public)
 app.use(express.static(path.join(__dirname, 'public')));
 
+// Để đọc được biến body
+app.use (express.urlencoded())
+
 // HTTP loger
 // app.use(morgan('combined'))
 // Template engine

@@ -22,6 +22,9 @@ class SiteController {
     search(req, res) {
         res.render('search');
     }
+    courses(req, res) {
+        res.render('courses');
+    }
 }
 
 module.exports = new SiteController();
